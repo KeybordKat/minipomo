@@ -25,12 +25,12 @@ fun SettingsScreen(initialFocusDuration: Int, initialBreakDuration: Int, onBack:
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background) // Apply background color from theme
+            .padding(50.dp),
     ) {
         Column(
             modifier = Modifier
                 .align(Alignment.TopCenter)
-                .fillMaxWidth()
-                .padding(30.dp),
+                .fillMaxWidth(),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.Start
         ) {
@@ -106,8 +106,7 @@ fun SettingsScreen(initialFocusDuration: Int, initialBreakDuration: Int, onBack:
             shape = RoundedCornerShape(12.dp), // Rounded corners for the button
             modifier = Modifier
                 .border(2.dp, MaterialTheme.colorScheme.onBackground, RoundedCornerShape(12.dp))
-                .align(Alignment.BottomCenter) // Align button at the bottom center
-                .padding(10.dp)
+                .align(Alignment.BottomCenter), // Align button at the bottom center
         ) {
             Text(
                 text = "Save and Go Back",
